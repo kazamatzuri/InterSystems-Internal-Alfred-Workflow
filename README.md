@@ -3,7 +3,17 @@ InterSystems-Internal-Alfred-Workflow
 
 Alfred Workflow for InterSystems internal tools. Not useful to non-InterSystems Employees.
 
-[Download](https://github.com/brandonhorst/InterSystems-Internal-Alfred-Workflow/raw/master/InterSystems.alfredworkflow)
+##Installation
+
+###Basic
+
+Click this link: [Download](https://github.com/brandonhorst/InterSystems-Internal-Alfred-Workflow/raw/master/bin/InterSystems.alfredworkflow)
+
+###Advanced
+
+`git clone` this repo, then `make`
+
+##Usage
 
 Provides the following utilities:
 
