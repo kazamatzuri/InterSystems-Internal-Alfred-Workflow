@@ -857,8 +857,8 @@ with open("classes.txt","r") as classfile:
         className = line.split(",")[0]
         pattern = '.*?'.join(map(re.escape, list("{query}")))
         if re.search(pattern, className, re.IGNORECASE):
-            nsName = "%SYS" if line.split(",")[1] == "CACHELIB\n" else "ENSLIB"
-            print "&lt;item uid='{0}' valid='YES' arg='http://docs.intersystems.com/ensemble_latest/csp/documatic/%CSP.Documatic.cls?APP=1&amp;amp;LIBRARY={1}&amp;amp;CLASSNAME={0}'&gt;&lt;title&gt;{0}&lt;/title&gt;&lt;icon&gt;docicon.png&lt;/icon&gt;&lt;/item&gt;".format(className, nsName)
+            nsName = "%25SYS" if line.split(",")[1] == "CACHELIB\n" else "ENSLIB"
+            print "&lt;item uid='{0}' valid='YES' arg='http://docs.intersystems.com/ensemble_latest/csp/documatic/%25CSP.Documatic.cls?APP=1&amp;amp;LIBRARY={2}&amp;amp;CLASSNAME={0}'&gt;&lt;title&gt;{1}&lt;/title&gt;&lt;icon&gt;docicon.png&lt;/icon&gt;&lt;/item&gt;".format(className.replace("%", "%25"), className, nsName)
 
 print """&lt;/items&gt;"""
 
