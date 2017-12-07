@@ -228,9 +228,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Brandon Horst</string>
+	<string>Fab</string>
 	<key>description</key>
-	<string>Controls for Cache and Internal Tools</string>
+	<string>Controls for Cache and Internal Tools (orig by Brandon)</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -352,7 +352,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://turbo.iscinternal.com/prodlog/devview.csp?Key={query}</string>
+				<string>https://turbo.iscinternal.com/prodlog/devview.csp?Key={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -415,7 +415,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://turbo.iscinternal.com/prodlog/itemview.csp?OBJID={query}</string>
+				<string>https://turbo.iscinternal.com/prodlog/itemview.csp?OBJID={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -478,7 +478,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://turbo.iscinternal.com/adhoc/viewrequest.csp?requestId={query}</string>
+				<string>https://live.adhoc.iscinternal.com/adhocrest/index.csp#/viewRequest/{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -495,7 +495,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://docs.intersystems.com/ensemble_latest/csp/docbook/DocBook.UI.SearchPageZen.cls?KEY=GRPT_common_display_elements&amp;KeyWord={query}</string>
+				<string>https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.SearchPageZen.cls?KEY=&amp;KeyWord={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -533,7 +533,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://docs.intersystems.com/ensemble_latest/csp/documatic/%25CSP.Documatic.cls</string>
+				<string>https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -571,7 +571,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://turbo.iscinternal.com/prodlog/itemedit.csp?mode=new</string>
+				<string>https://turbo.iscinternal.com/prodlog/itemedit.csp?mode=new</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -609,7 +609,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://iknow/OntolicaSearch/Pages/DefaultResults.aspx?k={query}</string>
+				<string>https://iknow/OntolicaSearch/Pages/DefaultResults.aspx?k={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -786,7 +786,7 @@
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://turbo.iscinternal.com/prodlog/devlog3.csp?query=Phoenix.DevKeyReports:DevKeyFullTextFilter&amp;filterText={query}&amp;sortState=</string>
+				<string>https://turbo.iscinternal.com/prodlog/devlog3.csp?query=Phoenix.DevKeyReports:DevKeyFullTextFilter&amp;filterText={query}&amp;sortState=</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -858,7 +858,7 @@ with open("classes.txt","r") as classfile:
         pattern = '.*?'.join(map(re.escape, list("{query}")))
         if re.search(pattern, className, re.IGNORECASE):
             nsName = "%25SYS" if line.split(",")[1] == "CACHELIB\n" else "ENSLIB"
-            print "&lt;item uid='{0}' valid='YES' arg='http://docs.intersystems.com/ensemble_latest/csp/documatic/%25CSP.Documatic.cls?APP=1&amp;amp;LIBRARY={2}&amp;amp;CLASSNAME={0}'&gt;&lt;title&gt;{1}&lt;/title&gt;&lt;icon&gt;docicon.png&lt;/icon&gt;&lt;/item&gt;".format(className.replace("%", "%25"), className, nsName)
+            print "&lt;item uid='{0}' valid='YES' arg='https://docs.intersystems.com/latest/csp/documatic/%25CSP.Documatic.cls?APP=1&amp;amp;LIBRARY={2}&amp;amp;CLASSNAME={0}'&gt;&lt;title&gt;{1}&lt;/title&gt;&lt;icon&gt;docicon.png&lt;/icon&gt;&lt;/item&gt;".format(className.replace("%", "%25"), className, nsName)
 
 print """&lt;/items&gt;"""
 
@@ -885,7 +885,7 @@ print """&lt;/items&gt;"""
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://turbo.iscinternal.com/adhoc/newrequest.csp</string>
+				<string>https://live.adhoc.iscinternal.com/adhocrest/index.csp#/newRequest/</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
