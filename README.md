@@ -29,7 +29,7 @@ Provides the following utilities:
 * trc (pass in TRC Number)
 * ccr (pass in CCR reference)
 * devlog (search Devlog for string)
-* cls (open class reference [autocompletes]) (currently 2013.1, so a bit out-of-date)
+* cls (open class reference [autocompletes]) (currently 2017.2)
 * newadhoc (open adhoc creation page)
 
 Feel free to modify and submit a PR.
