@@ -7,7 +7,7 @@ Alfred Workflow for InterSystems internal tools. Not useful to non-InterSystems 
 
 ###Basic
 
-Click this link: [Download](https://github.com/brandonhorst/InterSystems-Internal-Alfred-Workflow/raw/master/bin/InterSystems.alfredworkflow)
+Click this link: [Download](https://github.com/kazamatzuri/InterSystems-Internal-Alfred-Workflow/blob/master/bin/InterSystems.alfredworkflow?raw=true)
 
 ###Advanced
 
@@ -24,14 +24,13 @@ Provides the following utilities:
 * doc (search docs.intersystems.com for string)
 * classref (open docs.intersystems.com classref)
 * newprodlog (open prodlog creation page)
-* iknow (search http://iknow)
+* iknow (search https://iknow)
 * iscperson (search ISCPerson)
 * trc (pass in TRC Number)
 * ccr (pass in CCR reference)
 * devlog (search Devlog for string)
 * cls (open class reference [autocompletes]) (currently 2013.1, so a bit out-of-date)
 * newadhoc (open adhoc creation page)
-* vpn (connect to a OS-defined VPN called "ISC VPN". Change name to suite. Does not work with Cisco VPN Client.)
 
 Feel free to modify and submit a PR.
 
